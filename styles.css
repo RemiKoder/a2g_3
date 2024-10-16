@@ -5,39 +5,70 @@ body {
   color: rgb(0, 0, 0);
   margin: 0;
 }
-
 header {
-  border-width: 10px;
-  border-style: solid;
-  border-color: black;
+  margin-top: -20px;
+}
+.active {
+  background-color: #7e7e7e;
+}
+
+li a {
+  display: block;
+  color: white;
+  padding: 14px 40px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: black;
 }
 
 ul {
+  font-size: 17px;
+  background-color: #262626;
   display: flex;
   flex-direction: row;
-  justify-content: end;
+  justify-content: center;
   align-items: center;
   list-style-type: none;
   padding: 0;
-  gap: 20px;
-  padding: 0px 10px 0px 0px;
+  gap: 0px;
+  padding: 0px 40px 0px 0px;
   padding-inline: 10;
 }
 
 section {
-  height: 100vh;
-  background-color: lightblue;
+  padding: 0px 0px 0px 0px;
+  height: 0;
+  background-color: white;
 }
 
-.HomeSection {
-  background-color: lightsalmon;
+.TopSection {
+  padding: 0px 0px 0px 5px;
+  height: auto;
+  width: 50vb;
+  border-width: 8px;
+  border-style: solid;
+  border-color: black;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 8px 8px darkslategrey;
+  position: relative;
+  font-size: large;
 }
 
-#AboutSection {
-  background-color: lightgreen;
+.MiddleSection {
+  height: 50vh;
+  width: 50vb;
+  padding: 10px 0px 0px 5px;
+  font-size: medium;
 }
 
 footer {
-  display: flex;
-  justify-content: center;
+position: fixed;
+text-align: center;
+background-color: whitesmoke;
+  padding: 0px 0px 5px 0px;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
 }
